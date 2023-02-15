@@ -7,7 +7,6 @@ void main() {
 class App extends StatelessWidget {
   const App({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,9 +14,27 @@ class App extends StatelessWidget {
       theme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Testing NFC Scanning...'),
+          title: const Text(
+            'Testing NFC Scanning...',
+          ),
+          centerTitle: true,
         ),
-        body: SizedBox(),
+        body: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  'Start Scanning',
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
