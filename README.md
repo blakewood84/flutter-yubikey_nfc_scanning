@@ -1,3 +1,5 @@
 # yubikey_nfc_scanning
 
-Scanning a YubiKey NFC with Flutter.
+This is an example of how to utilize your mobile device to scan an NFC tag in Flutter.
+
+<p align="center"><img src="/images/example.gif" alt="Example" /></p>
